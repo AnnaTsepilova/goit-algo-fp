@@ -25,7 +25,7 @@ class LinkedList:
             current = next_node
         self.head = prev
 
-    # 2. Функція для сортування вставками 
+    # 2. Функція для сортування вставками
     def insertion_sort(self):
         sorted_list = None
         current = self.head
