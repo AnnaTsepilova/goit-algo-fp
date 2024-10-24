@@ -45,14 +45,14 @@ def draw_tree(tree_root):
 def build_heap(arr):
     n = len(arr)
     nodes = [Node(val) for val in arr]
-    
+
     # Встановлення дітей для вузлів купи
     for i in range(n // 2):
         if 2 * i + 1 < n:
             nodes[i].left = nodes[2 * i + 1]
         if 2 * i + 2 < n:
             nodes[i].right = nodes[2 * i + 2]
-    
+
     return nodes[0] if nodes else None
 
 
